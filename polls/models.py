@@ -9,10 +9,14 @@ class Question(models.Model):
     def __str__(self):
         return self.question_text
     
+    
 class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete = models.CASCADE)
-    choice_text = models.CharField(max_length = 255)
-    votes = models.IntegerField(default = 0)
+    option_one = models.CharField(max_length=30)
+    option_two = models.CharField(max_length=30)
+    option_three = models.CharField(max_length=30)
+    option_one_count = models.IntegerField(default=0)
+    option_two_count = models.IntegerField(default=0)
+    option_three_count = models.IntegerField(default=0)
 
     def __str__(self):
         return self.choice_text

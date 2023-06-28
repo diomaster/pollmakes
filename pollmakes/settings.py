@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls',
     'pager',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
