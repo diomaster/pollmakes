@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render, Http404
 from django.urls import reverse
 
+
 from .models import Question, Choice
 # Create your views here.
 
